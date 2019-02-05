@@ -1,0 +1,30 @@
+{
+    "name": "ranium/laravel-fixerio",
+    "description": "Laravel package/client for fixer.io api, a foreign exchange rates and currency conversion API.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abbas Ali",
+            "email": "abbas@ranium.in"
+        }
+    ],
+    "require": {
+        "ranium/fixerio-php-client": "0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ranium\\LaravelFixerio\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ranium\\LaravelFixerio\\ServiceProvider"
+            ],
+            "aliases": {
+                "Fixerio": "Ranium\\LaravelFixerio\\Facade"
+            }
+        }
+    }
+}
