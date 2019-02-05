@@ -34,3 +34,7 @@ echo $historicalRates['rates']['INR'];
 Please refer [ranium/fixerio-php-client](https://github.com/ranium/fixerio-php-client) for all available API calls and other details.
 
 The response for all the above calls will be a Guzzle Command Result object. Please refer fixer.io's [documentation](https://fixer.io/documentation) for further details about various endpoints, request parameters and response objects.
+
+## License
+
+This package is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
