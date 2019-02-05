@@ -21,4 +21,18 @@ return [
      |
      */
     'secure' => true,
+    /*
+     |-----------------------------------------------------------------------------
+     | Cache configuration
+     |-----------------------------------------------------------------------------
+     |
+     | Enable/Disable caching for the api requests.
+     | If enabled, provide the cache configuration options.
+     | Default cache storage will be used.
+     |
+     */
+    'cache' => [
+        'enabled' => false,
+        'expire_after' => 60, // In minutes
+    ]
 ];

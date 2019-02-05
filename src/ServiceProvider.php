@@ -1,7 +1,7 @@
 <?php
 namespace Ranium\LaravelFixerio;
 
-use Ranium\Fixerio\Client as FixerioClient;
+use Ranium\LaravelFixerio\Client as FixerioClient;
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 
 /**
@@ -33,6 +33,11 @@ class ServiceProvider extends IlluminateServiceProvider
             $config = $this->buildConfig($params);
 
             $client = FixerioClient::create($config['access_key'], $config['secure']);
+
+            // If caching has been enabled
+            if ($config['cache']['enabled']) {
+                $client->enableCache();
+            }
 
             return $client;
         });
