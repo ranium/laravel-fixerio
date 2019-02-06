@@ -29,7 +29,7 @@ class Client extends BaseClient
      * @return GuzzleHttp\Promise\ResultInterface|GuzzleHttp\Promise\PromiseInterface
      * @see \GuzzleHttp\Command\ServiceClientInterface::getCommand
      */
-    public function __call($name, $args)
+    public function __call($name, array $args)
     {
         // If cache is enabled, then get the result from cache
         if ($this->cacheResult) {
