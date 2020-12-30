@@ -1,6 +1,7 @@
 <?php
 namespace Ranium\LaravelFixerio;
 
+use Illuminate\Support\Facades\Cache;
 use Ranium\Fixerio\Client as BaseClient;
 
 /**
@@ -35,7 +36,7 @@ class Client extends BaseClient
         if ($this->cacheResult) {
             $key = $this->getCacheKey($name, $args);
 
-            return cache()->remember(
+            return Cache::remember(
                 $key,
                 config('fixerio.cache.expire_after'),
                 function () use ($name, $args) {

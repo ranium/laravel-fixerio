@@ -6,15 +6,28 @@
     "authors": [
         {
             "name": "Abbas Ali",
-            "email": "abbas@ranium.in"
+            "email": "abbas@ranium.in",
+            "homepage": "https://ranium.in",
+            "role": "Developer"
         }
     ],
     "require": {
-        "ranium/fixerio-php-client": "1.*"
+        "php": "^7.2|^8.0",
+        "ranium/fixerio-php-client": "1.*",
+        "laravel/framework": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8|^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^8.0|^9.0"
     },
     "autoload": {
         "psr-4": {
             "Ranium\\LaravelFixerio\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ranium\\LaravelFixerio\\Test\\": "tests"
         }
     },
     "extra": {
@@ -26,5 +39,7 @@
                 "Fixerio": "Ranium\\LaravelFixerio\\Facade"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

@@ -1,3 +1,18 @@
+<p align="center">
+    <a href="https://github.com/ranium/laravel-fixerio/actions">
+        <img src="https://github.com/ranium/laravel-fixerio/workflows/tests/badge.svg" alt="Build Status">
+    </a>
+    <a href="https://packagist.org/packages/ranium/laravel-fixerio">
+        <img src="https://img.shields.io/packagist/dt/ranium/laravel-fixerio" alt="Total Downloads">
+    </a>
+    <a href="https://packagist.org/packages/ranium/laravel-fixerio">
+        <img src="https://img.shields.io/packagist/v/ranium/laravel-fixerio" alt="Latest Stable Version">
+    </a>
+    <a href="https://packagist.org/packages/ranium/laravel-fixerio">
+        <img src="https://img.shields.io/packagist/l/ranium/laravel-fixerio" alt="License">
+    </a>
+</p>
+
 # Laravel Fixer.io
 
 Provides an easy to use Laravel package for [fixer.io](https://fixer.io) exchange rates and currency conversion JSON API. This is basically a Laravel wrapper for [ranium/fixerio-php-client](https://github.com/ranium/fixerio-php-client).
